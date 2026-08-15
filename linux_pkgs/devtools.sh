@@ -143,6 +143,10 @@ if mv "$(find . -maxdepth 1 -regex '.*yubico.*')" ~/.config; then
 fi
 chmod +x ~/.config/yubiauth/desktop_integration.sh && bash -c "$HOME/.config/yubiauth/desktop_integration.sh -i"
 
+# Backups and Backblaze
+sudo dnf -y install restic
+uv tool install 'b2[full]'
+
 # Other tools
 sudo dnf -y install gh dconf-editor nmap xeyes fzf setroubleshoot setools-console \
   policycoreutils-devel 'dnf-command(versionlock)' shellcheck sysstat jq wl-clipboard
