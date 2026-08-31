@@ -5,3 +5,6 @@ export VISUAL=/bin/vim
 export KITTY_CUSTOM="$XDG_CONFIG_HOME/kitty/kitty.d"
 export LC_MONETARY=en_CA.UTF-8
 export GH_TELEMETRY=false
+
+export RCLONE_TRANSFERS=16 # Set to $(nproc)
+export RCLONE_PASSWORD_COMMAND='op read <secret_reference>'

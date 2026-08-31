@@ -144,7 +144,7 @@ fi
 chmod +x ~/.config/yubiauth/desktop_integration.sh && bash -c "$HOME/.config/yubiauth/desktop_integration.sh -i"
 
 # Backups and Backblaze
-sudo dnf -y install restic
+sudo dnf -y install restic rclone
 uv tool install 'b2[full]'
 
 # Other tools
